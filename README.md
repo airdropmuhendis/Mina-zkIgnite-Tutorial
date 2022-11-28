@@ -38,59 +38,73 @@ sleep 1
 
 sudo apt-get update && sudo apt-get upgrade -y
 
-sleep(1)
+sleep 1
 
 sudo apt install curl git build-essential 
 
-sleep(1)
+sleep 1
 
 sudo apt install yarn
 
-sleep(1)
+sleep 1
 
 sudo apt-get install nodejs
 
-sleep(1)
+sleep 1
 
 sudo apt install npm
 
-sleep(2)
+sleep 1
 
 nodejs -v
 
 npm -v
 
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sleep 1
 
 sudo apt-get install nodejs
 
-node -v
+sleep 1
 
+node -v
 npm -v
 
 git clone https://github.com/o1-labs/zkapp-cli
 
+sleep 1
+
 npm instal -g zkapp-cli@0.5.3
+
+sleep 1
 
 zk --version
 
 npm install -g zkapp-cli
 
-git config --global user.email (mail adresiniz)
+sleep 1
 
+git config --global user.email (mail adresiniz)
 git config --global user.name (kullanıcı ismi)
 
+sleep 1
 
 zk project 04-zkapp-browser-ui --ui next
 
+sleep 1
+
 cd 04-zkapp-browser-ui
 
-git remote add origin oluşturduğumuz repo'nun url adresi
+sleep 1
+
+git remote add origin
+
+sleep 1
 
 git push -u origin main
 
-contrat çalıştırıyoruz
-  
+sleep 1
+
 cd
 cd 04-zkapp-browser-ui/contracts/
 
@@ -292,10 +306,3 @@ export default class ZkappWorkerClient {
         });
     }
 }
- 
- 
-
-  
-
-  
-  
