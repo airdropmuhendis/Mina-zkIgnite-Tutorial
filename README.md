@@ -1,27 +1,53 @@
+#!/bin/bash
+
+bold=$(tput bold)
+underline=$(tput smul)
+italic=$(tput sitm)
+info=$(tput setaf 2)
+error=$(tput setaf 160)
+warn=$(tput setaf 214)
+reset=$(tput sgr0)
+
+clear;
+echo "*********************---*********************"
+echo "************ AIRDROP MUHENDISIM *************"
+echo "*********************---*********************"
+sleep 3
+
 sudo su
+
 cd
-sleep(2)
+
+sleep 2
 
 ufw allow 22 && ufw allow 3000
+
 ufw enable
-sleep(1)
+
+sleep 1
 
 sudo apt-get update && sudo apt-get upgrade -y
+
 sleep(1)
 
 sudo apt install curl git build-essential 
+
 sleep(1)
 
 sudo apt install yarn
+
 sleep(1)
 
 sudo apt-get install nodejs
+
 sleep(1)
 
 sudo apt install npm
+
 sleep(2)
 
 nodejs -v
+
 npm -v
 
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
