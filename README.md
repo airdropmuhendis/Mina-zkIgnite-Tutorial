@@ -611,6 +611,19 @@ export default function App() {
   </div>
 }
 ```
+ 
+ ```
+cd 04-zkapp-browser-ui/ui/
+npm run deploy
+```
+
+bu işelm biraz uzun sürebilir.
+
+alttaki kısımda github kullanıcı adınızı düzenleyerek tarayıcınızda arayın açılan ekranda işlem gönderin bu sizin mina cüzdanınıza bağlanacak ve işlem gönderecek. bunu bi kaç defa tekrarlayın.
+
+```
+https://github kullanıcı adınız.github.io/04-zkapp-browser-ui/index.html  
+```
 
 
 
