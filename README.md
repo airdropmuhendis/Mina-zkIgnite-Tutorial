@@ -391,8 +391,8 @@ npm run dev
 2.sekme
 ```
 cd
-cd 04-zkapp-browser-ui/ui/pages
-sudo nano _app.page.tsx
+cd 04-zkapp-browser-ui/ui/
+npm run ts-watch
 ```
   daha sonra tarayıcımıza ıp:3000 yazarak kontrol edelim ıp burda sizin kendi ip niz olacak https kısmı silinecek.
   ```
