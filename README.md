@@ -7,7 +7,6 @@
 ## Sunucuyu nerden nasıl alacağınızı bilmiyorsanız node eğitim serimizi izleyebilirsiniz. [Node Eğitim Serisi](https://www.youtube.com/playlist?list=PLKxGUfdcj7MVXls2OvTpwx6CnpVJN685w) veya bir önce kurduğumuz manta suncunuzu sıfırlayarak kurabilirsiniz işlemler tamamlandıktan sonra sunucuyu isterseniz tamamen silebilirsiniz. 
  
 ![image](https://docs.minaprotocol.com/img/homepage/zkapp_developers.png)
-## Tekrar hatırlatalım ödüllü bir testnet değil sadece projeyi ilerlyen zamnlarda çok sık duyacağımızı düşünüyoruz bu yüzden öğrenmek hepimiz için iyi olacaktır ve yazılım konusunda kendini geliştirmek isteyen arkadaşlarımız için bir önayak konumunda olsun.
   
 ## Ödül ve şartlar hakkında [Link](https://minaprotocol.com/blog/zkspark-cohort0)
  
@@ -41,7 +40,8 @@ ufw enable
 ```
 
   ```
- sudo apt-get update && sudo apt-get upgrade -y
+ sudo apt update 
+ sudo apt upgrade
   ```
 
  ## Bu komut ile bize gerekli olan dependencies ları indiriyoruz: Bağımlılık (dependency) kurulumda ihtiyaç duyduğumuz dışarıdan eklediğimiz kaynaklar ya da bileşenlerdir (kütüphane).
@@ -52,24 +52,8 @@ sudo apt install curl git build-essential
    ```
 sudo apt install yarn
    ```
-  ## Bizden istenilen özelliklere uygun olarak node js kuruyoruz
-   ```
-sudo apt-get install nodejs
- ```
-```
-sudo apt install npm
-```
- ## versiyonları kontrol ediyoruz çıktıda 16 üstü değilse yükseltme yapamamız gerekiyor örnek olara versiyon cıktısı 10 ile başlıyorsa 10. versiyon kurulu, bu yüzden yükseltme gerekiyor.
-```
-nodejs -v
-```
-
-```
-npm -v
-```
- 
+  ## Bizden istenilen özelliklere uygun olarak node js kuruyoruz 16 üstü olmalı
   
-   ## Yükseltme gerekiyorsa burdaki komutları ekleyip 18'e yükseltebilirsiniz.
    
    ```
    curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
@@ -132,7 +116,9 @@ bize verdiği şifreyi kaydedelim. ilerleyen süreçlerde kullanacağız.
   ```
   git push -u origin main
   ```
-  contrat çalıştırıyoruz
+ bizden github kullanıcı adımızı ve geliştirici kısmında verdiği şifreyi isteyecek.
+ 
+ contrat dosyalarını oluşturalım
   
  ```
 cd
@@ -344,6 +330,9 @@ export default class ZkappWorkerClient {
     }
 }
  ```
+ ctrl x ile çıkıyoruz y yazıp enter diyoruz.
+ 
+ # UI tasarımı burası ve sonrasındaki kısım react uygun olarak yazılmış. bilenler burayı kendinize göre kişiselleştirebilirsiniz bu sadece örnek kurlumdan alınmıştır. burayı özelleştirebilen ödüllü büyük ihtimalle kazanır.
  ```
 cd
  ```
@@ -382,7 +371,7 @@ a {
 }
  
 ```
-
+burda dediğim gibi özelleştirme yapılabilir component button ekleyerek kişiselleştirilebilir.
 ```
 cd
 ```
@@ -617,14 +606,23 @@ cd 04-zkapp-browser-ui/ui/
 npm run deploy
 ```
 
-bu işelm biraz uzun sürebilir.
+Bu işelm biraz uzun sürebilir.
+ sizden yine github kullanıcı adı ve geliştiricide verdiği şifreyi isteyecek
 
 alttaki kısımda github kullanıcı adınızı düzenleyerek tarayıcınızda arayın açılan ekranda işlem gönderin bu sizin mina cüzdanınıza bağlanacak ve işlem gönderecek. bunu bi kaç defa tekrarlayın.
 
 ```
 https://github kullanıcı adınız.github.io/04-zkapp-browser-ui/index.html  
 ```
-
+bu işlemleri yaptıktan sonra formu doldurmayı unutmayın. dilerseniz burdaki işlemleri silebilirsiniz.
+ ```
+rm -rf 04-zkapp-browser-ui
+rm -rf zkapp-cli
+rm -rf .npm
+npm uninstall -g zkapp-cli
+sudo apt-get remove nodejs
+ ```
+ # 2. Part olarak Oracle oluşturma var yani zinci dışından veri alabilecek bir zkapp oluşturma bunun için ayrı form ve ayrı görevler var şuan sürekli hata aldığım için ekleme yapamadım.hatayı çözebilirsem  part 2 olarak gelecek son tarih 16 Aralık.
 
 
   
