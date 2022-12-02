@@ -2,7 +2,7 @@
 
 ## Mina Protocol, Layer-1 blok zincirleri arasında “minimal” blok zinciri olarak tanımlanan ve bilinen en hafif blok zinciri olma ünvanına sahiptir. Ölçeklendirme adına gelecekte çok fazla konuşulacak bir proje (boyut sadece 22kb). Bu rehberde sizlerle beraber mina berkley ağı üzerinde zkspark oluşturarak 250.000 MİNA ödüllü yarışmasına katılacağız. Temel eğitimler [Mina Docs](https://docs.minaprotocol.com/zkapps/tutorials/hello-world) üzerinde bulunuyor. burda bireysel geliştirmeler yapmanız gerekecek ancak temel yapmanız gereknleri sizlere aktarmaya çalışacağız.
 
-## Video [Linki](https://youtu.be/62I0tvTnEfQ) 
+## Video [Linki](https://youtu.be/YHHO5Vz4PrU) 
 
 ## Sunucuyu nerden nasıl alacağınızı bilmiyorsanız node eğitim serimizi izleyebilirsiniz. [Node Eğitim Serisi](https://www.youtube.com/playlist?list=PLKxGUfdcj7MVXls2OvTpwx6CnpVJN685w) veya bir önce kurduğumuz manta suncunuzu sıfırlayarak kurabilirsiniz işlemler tamamlandıktan sonra sunucuyu isterseniz tamamen silebilirsiniz. 
  
@@ -11,7 +11,7 @@
 ## Ödül ve şartlar hakkında [Link](https://minaprotocol.com/blog/zkspark-cohort0)
  
  ## Cüzdan kurlumu ve test tokenleri
-
+- Yarışmaya kayıt için https://minaprotocol.com/blog/zkapps-era
 - Auro Cüzdanı indir https://www.aurowallet.com/
 - Berkley ağında cüzdan adresimizi yazarak test tokenlerini alıyoruz https://faucet.minaprotocol.com/ yeni blok eklenince test tokenleri gelecektir. Bloklaraı [burdan] (https://berkeley.minaexplorer.com) kontrol edebilirsiniz.
 
@@ -332,7 +332,7 @@ export default class ZkappWorkerClient {
  ```
  ctrl x ile çıkıyoruz y yazıp enter diyoruz.
  
- # UI tasarımı burası ve sonrasındaki kısım react uygun olarak yazılmış. bilenler burayı kendinize göre kişiselleştirebilirsiniz bu sadece örnek kurlumdan alınmıştır. burayı özelleştirebilen ödüllü büyük ihtimalle kazanır.
+ # UI tasarımı burası ve sonrasındaki kısım react uygun olarak yazılmış, bilenler burayı kendinize göre kişiselleştirebilirsiniz bu sadece örnek kurulumdan alınmıştır. burayı özelleştirebilen ödülü büyük ihtimalle kazanır.
  ```
 cd
  ```
@@ -394,7 +394,7 @@ cd
 cd 04-zkapp-browser-ui/ui/
 npm run ts-watch
 ```
-  daha sonra tarayıcımıza ıp:3000 yazarak kontrol edelim ıp burda sizin kendi ip niz olacak https kısmı silinecek.
+  Daha sonra tarayıcımıza ıp:3000 yazarak kontrol edelim ıp burda sizin kendi ip niz olacak https kısmı silinecek.
   ```
   cd
 cd 04-zkapp-browser-ui/ui/pages
@@ -602,11 +602,12 @@ export default function App() {
 ```
  
  ```
+cd
 cd 04-zkapp-browser-ui/ui/
 npm run deploy
 ```
 
-Bu işelm biraz uzun sürebilir.
+Bu işlem biraz uzun sürebilir.
  sizden yine github kullanıcı adı ve geliştiricide verdiği şifreyi isteyecek
 
 alttaki kısımda github kullanıcı adınızı düzenleyerek tarayıcınızda arayın açılan ekranda işlem gönderin bu sizin mina cüzdanınıza bağlanacak ve işlem gönderecek. bunu bi kaç defa tekrarlayın.
@@ -614,7 +615,7 @@ alttaki kısımda github kullanıcı adınızı düzenleyerek tarayıcınızda a
 ```
 https://github kullanıcı adınız.github.io/04-zkapp-browser-ui/index.html  
 ```
-bu işlemleri yaptıktan sonra formu doldurmayı unutmayın. dilerseniz burdaki işlemleri silebilirsiniz.
+bu işlemleri yaptıktan sonra [formu](https://fisz9c4vvzj.typeform.com/zkSparkTutorial?typeform-source=minaprotocol.com) doldurmayı unutmayın. dilerseniz burdaki işlemleri silebilirsiniz.
  ```
 rm -rf 04-zkapp-browser-ui
 rm -rf zkapp-cli
