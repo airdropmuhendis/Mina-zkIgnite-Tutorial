@@ -342,6 +342,7 @@ cd 04-zkapp-browser-ui/ui/styles
  ```
  sudo nano globals.css
  ```
+burdaki kodu kopyalayıp açılan sekmedeki kodun yerine yapıştırıyoruz kodu tamamen silip bunu yapıştırın.
  ```
  html,
 body {
