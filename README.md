@@ -1,4 +1,4 @@
-<h1 align="center">Mina Protocol Berkley Testnet (ZKapp oluşturma)
+<h1 align="center">Mina Protocol zkIgnate 250.000 MINA Ödüllü Yarışma
 
 ## Mina Protocol, Layer-1 blok zincirleri arasında “minimal” blok zinciri olarak tanımlanan ve bilinen en hafif blok zinciri olma ünvanına sahiptir. Ölçeklendirme adına gelecekte çok fazla konuşulacak bir proje (boyut sadece 22kb). Bu rehberde sizlerle beraber mina berkley ağı üzerinde zkspark oluşturarak 250.000 MİNA ödüllü yarışmasına katılacağız. Temel eğitimler [Mina Docs](https://docs.minaprotocol.com/zkapps/tutorials/hello-world) üzerinde bulunuyor. burda bireysel geliştirmeler yapmanız gerekecek ancak temel yapmanız gereknleri sizlere aktarmaya çalışacağız.
 
